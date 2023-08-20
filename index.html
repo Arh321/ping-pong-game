@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ping-pong-game</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="game_container">
+        <div class="game">
+            <div class="game--exit">
+                <p>Exit Ping Pong</p>
+                <span class="material-symbols-outlined">
+                    close
+                </span>
+            </div>
+            <div class="game_envierment">
+                <div id="target1" class="game--pads -right">
+
+                </div>
+                <div id="target" class="game--pads -left">
+
+                </div>
+                <div id="ball" class="game--ball">
+
+                </div>
+                <p id="lost">
+                    Game Over... :)
+                </p>
+                <div class="game--scores">
+                <span>player1:</span>
+                <span id="player1">0</span>
+                <span>player2:</span>
+                <span id="player2">0</span>
+                </div>
+                
+            </div>
+            <p class="game--guide-text">
+                Use up & down arrow Keys or
+            </p>
+            <div class="game--buttons">
+                <button id="up">
+                    <span class="material-symbols-outlined">
+                        arrow_upward
+                    </span>
+                </button>
+                <button id="down">
+                    <span class="material-symbols-outlined">
+                        arrow_downward
+                    </span>
+                </button>
+                <button id="start">
+                    start
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

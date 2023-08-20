@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+@keyframes example {
+    0%   { right:2px; top:2px;}
+    50%  {right:2px; top: 190px;}
+    100% { right:2px; top:2px;}
+}
+
+.game_container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(38, 38, 38);
+}
+
+.game{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.game--exit{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(197, 196, 196);
+}
+
+.game--exit p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    color: rgb(197, 196, 196);
+}
+
+.game_envierment{
+    width: 100%;
+    height: 60%;
+    background-color: #fff;
+    position: relative;
+}
+
+.game_envierment .game--pads{
+    width: 4px;
+    height: 48px;
+    border-radius: 4px;
+    background-color: rgb(30, 30, 30);
+}
+
+.-right{
+    position: absolute;
+    right: 2px;
+    top: 2px;
+}
+
+.-left{
+    position:absolute;
+    left: 2px;
+    top: 2px;
+    
+}
+
+.game_envierment .game--ball{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.game_envierment p{
+    display: none;
+    width: 150px;
+    position: absolute;
+    left: 30%;
+    top: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: black;
+}
+.game_envierment .game--scores{
+    width: 150px;
+    position: absolute;
+    left: 35%; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: black;
+}
+
+.game--guide-text{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    color: rgb(197, 196, 196);
+}
+
+.game--buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.game--buttons button{
+    width: 44px;
+    height: 36px;
+    background-color: rgb(197, 196, 196);
+    border: none;
+}
+
+.game--buttons button:active{
+    background-color: rgb(115, 115, 115);
+    
+}
